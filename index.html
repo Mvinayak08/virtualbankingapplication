@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Virtual Banking Application</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mysource_files/style.css" rel="stylesheet">
+  
+</head>
+
+
+<body>
+
+    <div class="container-fluid overflow-hidden">
+
+        <header class=" col-sm-12" style="background-color:rgb(68, 59, 59); padding-top: 5px;">
+            <h1 style="text-align: center; color: white;">Virtual Banking Application <br></h1>
+
+            <div class="row">
+                <div class="col-sm-9 ">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb" style="background-color:rgb(68, 59, 59); padding-top: 30px;">
+                          <li class="breadcrumb-item" ><a href="#title" style="color: white;">Home</a></li>
+                          <li class="breadcrumb-item" ><a href="#BankCustomer" style="color: white;">BankCustomer</a></li>
+                          <li class="breadcrumb-item" ><a href="#BankManager" style="color: white;">BankManager</a></li>
+                          <li class="breadcrumb-item" ><a href="#swaggerresults" style="color: white;">Swagger</a></li>
+                          <li class="breadcrumb-item" ><a href="#futurescope" style="color: white;">FutureScope</a></li>
+                        </ol>
+                      </nav>
+                </div>
+                <div class="col-sm-3" style="padding-bottom: 20px; padding-top: 20px;">
+                <nav>
+                    <ul class="nav nav-pills pull-right">
+                      <li class="active"><a href="#VirtualBankingApplication">Author</a></li>
+                      <li class="active"><a href="#about">About</a></li>
+                      <li class="active"><a href="#contact">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+
+            <!-- <div class="col-sm-3" style="padding-bottom: 20px; padding-top: 20px;">
+                  <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                    <li class="nav-item " role="presentation col-sm-2" >
+                    <button class="nav-link active rounded-5 " id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" href="vinayakmahajan">Author</button>
+                    </li>
+                    <li class="nav-item " role="presentation col-sm-2">
+                    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" >About</button>
+                    </li>
+                    <li class="nav-item  " role="presentation col-sm-2">
+                    <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" herf="contact">Contact</button>
+                    </li>
+                  </ul>
+                </div> -->
+        
+        </header>
+
+        <div class="row">
+        <div class="col-sm-3" style="padding-top: 20px">
+
+            <nav class="nav nav-pills flex-column flex-sm-column">
+                <li> <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">About Project</a>
+                 <ul>
+                     <li><a href="#title">Title</a></li>
+                     <li><a href="#discription">Discription</a></li>
+                     <li><a href="#howdoesitwork">How does it work</a></li>
+                     <li><a href="#projectspecifications">Project Specificatons</a></li>
+                     <li><a href="#projectstructure">Project Structure</a></li>
+                   </ul>
+                 </li>
+ 
+                 <li> <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" id="BankCustomer" href="#bankcustomer">BankCustomer</a>
+                     <ul>
+                     <li><a href="#aboutbankcustomer">About BankCustomer</a></li>
+                     <li><a href="#registernewcustomer">Registration</a></li>
+                     <li><a href="#bankcustomerlogin">Login</a></li>
+                     <li><a href="#profile">Profile</a></li>
+                     <li><a href="#checkbalance">Balance</a></li>
+                     <li><a href="#credit">Credit</a></li>
+                     <li><a href="#debit">Debit</a></li><a href="#">
+                     <li><a href="#ministatement">mini-statement</a></li>
+                     <li><a href="#logout bankcustomer">Logout</a></li>
+                   </ul>
+                 </li>
+ 
+                 <li> <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" id="BankManager" href="#bankcmanager">BankManager</a>
+                     <ul>
+                         <li><a href="#aboutbankmanager">About BankManager</a></li>
+                         <li><a href="#loginbankmanager">Login</a></li>
+                         <li><a href="#viewcustomerlist">View Customer List</a></li>
+                         <li><a href="#viewcustomerdetails">View Customer Details</a></li>
+                         <li><a href="#delete customer">Delete Customer</a></li>
+                         <li><a href="#updatecustomer">Update Customer</a></li>
+                         <li><a href="#Logoutbankmanager">Logout</a></li>
+                     </ul>
+                 </li>     
+                 <li> <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" id="swaggerresults" href="##swagger">Swagger</a>
+                     <ul>
+                         <li><a href="#aboutswagger">About Swagger</a></li>
+                         <li><a href="#swaggerResults">Swagger Results</a></li> 
+                     </ul>
+                 </li>
+                 <li> <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" id="futurescope" href="#future scope">Future Scope</a>
+                     <ul>
+                         <li><a href="#aboutfuturescope">Future Scope</a></li> 
+                     </ul>
+                 </li>
+               </nav>
+        </div>
+
+        <div class="col-sm-6" style="padding-top: 20px;">
+            <div class="overflow-auto" style="height: 850px;">
+            <h2 Style="color:blue;", id="about project">About Project</h2>
+          <h3 Style="color:red;", id="title">Title </h3>
+          <p>Virtual Banking Application</p>
+          <h3 Style="color:red;", id="discription">Discription</h3>
+          <p>Virtual Banking application is a client-server based web application.
+              The project is designed using spring framework where maven is used as a building tool 
+              and project is initialized using spring boot. 
+              Java is used as primary programming language where Java 8 is used as run time environment.</p>
+
+              <h3 Style="color:red;", id="howdoesitwork">How does it work</h3>
+            <p>•	The project is designed to perform following operations, 
+                Basically the operations are categorized into two types,</br>
+
+                1. Bank Manager side Operations</br>
+                2. Bank Customer side Operations</br>
+            </p> 
+             </br>
+            <p>
+                •	Bank Manager side operations contains:-</br>
+	                1. Login </br>
+	                2. View Bank Customer</br>
+	                3. View List of Bank Customers </br>
+	                4. Update Bank Customer as per requirement</br>
+	                5. Delete Bank Customer</br>
+	                6. Logout </br>
+
+            </p>
+            </br>
+            <p>
+                •	Bank Customer side operations contains:-</br>
+	                1.  Registration</br>
+	                2.  Login </br>
+	                3.  View profile</br>
+	                4.  View balance</br>
+	                5.  Perform Transactions like credit or debit </br>
+	                6.  Check mini-statement</br>
+	                7.  Logout</br>
+
+            </p>
+            <h3 Style="color:red;", id="projectspecifications">Project Specifications</h3>
+            <table border="color:black;">
+                <tr>
+                  <th style="padding: 15px;">Specifications</th>
+                  <th style="padding: 15px;">:</th>
+                  <th style="padding: 15px;">Details</th>
+                </tr>
+                <tr>
+                  <td style="padding: 10px;">Project Name</td>
+                  <td style="padding: 10px;"><b> : </b></td>
+                  <td style="padding: 10px;">Virtual Banking Application</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Role</td>
+                    <td style="padding: 10px;"><b> : </b></td>
+                    <td style="padding: 10px;">Back End Development</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Role Performed</td>
+                    <td style="padding: 10px;"><b> : </b></td>
+                    <td style="padding: 10px;">Database Mapping, API Testing</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Technology Used for Backend</td>
+                    <td style="padding: 10px;"><b> : </b></td>
+                    <td style="padding: 10px;">Java 8</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Database</td>
+                    <td style="padding: 10px;"><b> : </b></td>
+                    <td style="padding: 10px;">PostgreSQL</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">API testing tool</td>
+                    <td style="padding: 10px;"><b> : </b></td>
+                    <td style="padding: 10px;">Postman and Swagger</td>
+                  </tr>
+                <tr>
+                    <td style="padding: 10px;">Third party tool</td>
+                    <td style="padding: 10px;"><b> : </b></td>
+                    <td style="padding: 10px;">Spring Tool Suite 4</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Version control</td>
+                    <td style="padding: 10px;"><b> : </b></td>
+                    <td style="padding: 10px;">Github</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Operating system</td>
+                    <td style="padding: 10px;"><b> : </b></td>
+                    <td style="padding: 10px;">Windows 10</td>
+                </tr>
+            </table></br>
+            <h3 Style="color:red;", id="projectstructure">Project Structure</h3>
+            <p>The overall project structure will look like as shown in below figures, there are 
+              basically six packages like Application, Model, Repository, Service, Controller and Exception package</br>
+            
+              <img src="1.jpg" width="100%" alt="overall project structure">
+          </br></br></br>
+
+          <p>Out of above mentioned packages the Model package contains all required entities as 
+              shown in figure,</br>
+              <img src="2.png" width="100%" alt="model package">
+          </br></br></br>
+
+          <p>Next the repository package contains the required interfaces as shown below,
+              <img src="3.jpg" width="100%" alt="repository package">
+          </br></br></br>
+
+          <p>Moving ahead we have Service package which contains BankManagerService, 
+              BankCustomerService, TransactionService classes as shown,
+              <img src="4.jpg" width="100%" alt="service package">
+          </br></br></br>
+
+          <p>Further when we talk about Controller package we have following classes,</br>
+              1.Register controller</br>
+              2.Login controller</br>
+              3.Logout controller</br>
+              4.BankManager Controller</br>
+              5.BankCustomer Controller</br>
+              6.Transaction Controller                
+          <img src="5.jpg" width="100%" alt="controller package">
+          </br></br></br>
+
+          <p>Finally we have an exception package as shown in fig,
+              <img src="6.jpg" width="100%" alt="exception package">
+          </br></br></br>
+
+          <p>The test cases for each method is written and executed successfully,
+              <img src="7.jpg" width="100%" alt="test package">
+          </br></br></br>
+
+          <p>All maven dependancies are imported using pom.xml file,
+              <img src="8.jpg" width="100%" alt="maven">
+          </br>
+
+          <p>The basic URL is tested using postman as shown in below,
+              <img src="9.jpg" width="100%"  alt="basic url">
+            </br></br></br>
+
+          <p>Server is running on local host 8099 port and browser output will look like,
+              <img src="10.jpg" width="100%" alt="browser output">
+          
+          <hr>
+
+            <h2 Style="color:blue;", id="bankcustomer">BankCustomer</h2>
+            <h3 Style="color:red;", id="aboutbankcustomer">About BankCustomer</h3>
+            <p>BankCustomer is an important entity of this project. In model package
+              the BankCustomer entity is defined along with its attributes and all required methods.
+              BankCustomer is an entity which can register, login to the app and can make credit or 
+              debit transactions through this Virtual Banking Application. The detailed operations 
+              of BankCustomer are shown ahead with api testing using postman
+            </p>
+          </br>
+
+          <h3 Style="color:red;", id="registernewcustomer">Registration</h3>
+          <p>With the help of post request a new customer can register to the application. 
+             For registration process new customer has to provide required details,
+             this customer details will store in the database and a unique account number is generated for the 
+             perticular customer. To understand this process few dummy customers are registered through postman 
+             as shown below, </p></br>
+             1. Customer_1 Registration
+             <img src="11.jpg" width="100%" alt="customer_1"></br>
+             2. Customer_2 Registration
+             <img src="12.jpg" width="100%" alt="customer_2"></br>
+             3. Customer_3 Registration
+             <img src="13.jpg" width="100%" alt="customer_3"></br>
+             4. Customer_4 Registration
+             <img src="14.jpg" width="100%" alt="customer_4"></br>
+             <p>After successful registration of four new customers the database record is shown in below figure</p>
+             <img src="15.jpg" width="100%" alt="customer database"></br>
+
+             <h3 Style="color:red;", id="bankcustomerlogin">Login</h3>
+             <p>After registration customer needs to login to the application using username and password.
+              This application provides two types of login methods. If the user is BankManager then he can 
+              log in as BankManager or if user is BankCustomer then he can login as BankCustomer as shown below,
+              <img src="16.jpg" width="100%" alt="login"></br></br></br>
+              Let us login as BankCustomer with customer_1 username and password
+              <img src="17.jpg" width="100%" alt="BankCustomerLogin"></br></br></br>
+
+              <h3 Style="color:red;", id="profile">Profile</h3>
+              <p>After successfully logged in customer can view his profile with the help of get request</p>
+              <img src="18.jpg" width="100%" alt="view profile"></br></br></br>
+             </p>
+
+             <h3 Style="color:red;", id="checkbalance">Balance</h3>
+             <p>Further the customer_1 can check it's balance with get request as shown in fig,</p>
+             <img src="balance.jpg" width="100%" alt="view balance"></br></br></br>
+
+             <h3 Style="color:red;", id="credit">Credit</h3>
+             <p>After balance check if customer wants to make some transaction he can do so, 
+              with transaction request customer is elligible to perform 
+              either credit transaction or debit transactionas shown below,</p>
+              <img src="19.jpg" width="100%" alt="transaction"></br></br>
+              <p>let's perform credit transaction. this time let's login customer_2 with username and password</p>
+              <img src="20.jpg" width="100%" alt="customer_2"></br></br>
+              Let's credit some amount and the responce will be get with customer's updated balance
+              <img src="22.jpg" width="100%" alt="credit">
+
+              <h3 Style="color:red;", id="debit">Debit</h3>
+              <p>Customer can also withdraw some amount through debit transaction. if the debit amount
+                is more than the existing customer balance then the transaction fails and response will be
+                insufficient balance as shown below,
+              </p>
+              <img src="21.jpg" width="100%" alt="debit"></br></br>
+
+              Now, if the balance is more than the debit amount then after debit request customer account will reflect 
+              the updated balance after deducting the debit amount as shown below,
+              <img src="23.jpg" width="100%" alt="debit"></br></br>
+
+              <h3 Style="color:red;", id="ministatement">Mini-statement</h3>
+              <p>After done some transactions, customer can request for ministatement and the response will be as 
+                shown below,
+              </p>
+              <img src="24.jpg" width="100%" alt="ministatement"></br></br>
+
+              <h3 Style="color:red;", id="logout bankcustomer">Logout</h3>
+              <p>Finally customer can get logged out from application with logout request, as shown</p>
+              <img src="Logout customer.jpg" width="100%" alt="logout"></br></br>
+
+            <h2 Style="color:blue;", id="bankcmanager">BankManager</h2>
+            <h3 Style="color:red;", id="aboutbankmanager">About BankManager</h3>
+            <p>BankManager is a very important entity which is designed in the model package with 
+              appropriate fields and methods. Login credentials ie. username and password is already
+              stored in the database. so there is no registration for BankManager because this entity is unique.
+              Login, view customer list, view customer details, update particular customer or delete customer, Logout
+              these are few important tasks can perform by BankManager. Basic details of BankManager stored in database
+              is shown below,
+            </p>
+            <img src="25.jpg" width="100%" alt="Bankmanager"></br></br>
+
+            <h3 Style="color:red;", id="loginbankmanager">Login</h3>
+            <p>With the help of provided username and password BankManager can login to the app</p>
+            <img src="26.jpg" width="100%" alt="LoginBankmanager"></br></br>
+
+            <h3 Style="color:red;", id="viewcustomerlist">View Customer List</h3>
+            <p>With the help of get request BankManager can view all existing customers as shown,</p>
+            <img src="27.jpg" width="100%" alt="viewcustomerlist"></br>
+            <img src="28.jpg" width="100%" alt="viewcustomerlistwithusernameonly"></br></br>
+
+            <h3 Style="color:red;", id="viewcustomerdetails">View Customer Details</h3>
+            <p>BankManager can also view the particular customer's details</p>
+            <img src="29.jpg" width="100%" alt="viewcustomerdetails"></br></br>
+
+            <h3 Style="color:red;", id="delete customer">Delete Customer</h3>
+            <p>BankCustomer can not close his account he has to request for account closure towards BankManager
+            BankManager can only delete the particular customer account if requested</p>
+            <img src="30.jpg" width="100%" alt="delete customer"></br>
+            After deleting the particular customer BankManager can crosscheck weather the customer profile deleted or 
+            not by by get accountnumber request. The meaningful response will be flash if customer is deleted as shown below
+            <img src="31.jpg" width="100%" alt="delete customer">
+          </br></br>
+
+          <h3 Style="color:red;", id="updatecustomer">Update Customer</h3>
+            <p>If BankCustomer wants to update his profile or any misleading transaction needs to be 
+              settled then as per the request BankManager can update the customer's profile with the help of 
+              put request
+            </p>
+            <img src="32.jpg" width="100%" alt="update customer"></br>
+            after updation the corrections are reflects in database as shown below,
+            <img src="33.jpg" width="100%" alt="update customer database"></br></br>
+
+            <h3 Style="color:red;", id="Logoutbankmanager">Logout</h3>
+            <p>Finally BankManager can logged out through application with Logout request</p>
+            <img src="bankmanager logout.jpg" width="100%" alt="Logout BankManager"></br></br>
+          </hr>
+
+            <h2 Style="color:blue;", id="swagger">Swagger</h2>
+            <h3 Style="color:red;", id="aboutswagger">About Swagger</h3>
+            <p>Swagger is a suite of tools for API developers from SmartBear Software
+               and a former specification upon which the OpenAPI Specification is based.
+               When creating APIs, Swagger tooling may be used to automatically generate an Open API document based on the code itself. 
+               This embeds the API description in the source code of a project 
+               and is informally called code-first or bottom-up API development.
+               When described by an OpenAPI document, Swagger open-source tooling may be used to interact directly with the API through the Swagger UI. 
+               This project allows connections directly to live APIs through an interactive, HTML-based user interface.
+              Requests can be made directly from the UI and the options explored by the user of the interface.</p></br></br>
+
+              <h3 Style="color:red;", id="swaggerResults">Swagger Results</h3>  
+              <p>Swagger results are as shown below,</p>
+              <img src="swagger homepage.jpg" width="100%" alt="Swagger Homepage"></br>
+              
+              <p>Login Bankcustomer is shown below</p>
+              <img src="swagger login bankcustomer.jpg" width="100%" alt="Swagger login bankcustomer"></br>
+
+              <p>Similarly all other api's are tested using swagger and expected results are obtained successfully</p>
+            </br></br>
+
+              <h2 Style="color:blue;", id="future scope">Future Scope</h2>
+              <h3 Style="color:red;", id="aboutfuturescope">About Future Scope</h3>
+              <p>This is the bankend development Virtual Banking Application Project.
+                Here Database mapping and api testings are done and expected results are obtained successfully.
+                There is a great scope in frontend or UI development for this project. REST or Angular framework
+                will be helpful to do so.
+              </p> 
+            </div>             
+        </div>
+        <div class="col-sm-3">
+            <img src="pic.jpg" width =250px, height=250px, alt="Vinayak Mahajan" id="vinayakmahajan">
+        <h2 id="about">About</h2>
+        <table>
+            <tr>
+            <td>Project</br></br></br></td>
+            <td>:</br></br></br></td>
+            <td>Virtual Banking Application</br></br></br></td>
+            </tr>
+        
+            <tr>
+            <td>Technologies</td>
+            <td>:</td>
+            <td>Spring framework</td>
+            </tr>
+            <tr>
+            <td> </td>
+            <td>:</td>
+            <td>Springboot</td>
+            </tr>
+            <tr>
+            <td> </td>
+            <td>:</td>
+            <td>springIO</td>
+            </tr>
+            <tr>
+            <td> </td>
+            <td>:</td>
+            <td>maven</td>
+            </tr>
+            <tr>
+            <td> </td>
+            <td>:</td>
+            <td>Hibernate</td>
+            </tr>
+            <tr>
+            <td> </td>
+            <td>:</td>
+            <td>Java8</td>
+            </tr>
+            <tr>
+            <td> </td>
+            <td>:</td>
+            <td>PostgreSQL</td>
+            </tr>
+            <tr>
+            <td> </td>
+            <td>:</td>
+            <td>Postman</td>
+            </tr>
+            <tr>
+            <td> </td>
+            <td>:</td>
+            <td>Swagger</td>
+            </tr>
+            <tr>
+            <td> </td>
+            <td>:</td>
+            <td>Spring Tool Suite</td>
+            </tr>
+            <tr>
+            <td></br></br>Author</br></br></td>
+            <td></br></br>:</br></br></td>
+            <td></br></br>Vinayak Mahajan</br></br></td>
+            </tr>
+        </table>
+            <h2 id="contact">Contact</h2>
+            <table>
+            <tr>
+            <td>email</td>
+            <td> : </td>
+            <td>vinayakmahajan08@gmail.com</br></td>
+            </tr>
+            <tr>
+            <td>github id</br></td>
+            <td> : </br></td>
+            <td>Mvinayak08</br></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+</div>
+    </div>
+    <footer class="col-sm-12" style="text-align: center; background-color: black; color: white;">
+        <p>&copy; 2023 Virtual Banking Application<br> All rights reserved<br><a href="#vinayakmahajan" style="color: beige;">Author : Vinayak Mahajan</a></p>
+    </footer>
+    </div>
+    
+ 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
